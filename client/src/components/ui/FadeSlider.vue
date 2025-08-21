@@ -1,0 +1,84 @@
+<template>
+  <div class="slider" :style="{ height }">
+    <transition name="fade" mode="out-in">
+      <div
+        v-if="slides[current]"
+        :key="current"
+        class="slide"
+        :style="{ backgroundImage: `url(${slides[current].image})` }"
+      >
+        <div class="overlay">
+          <h1>{{ slides[current].title }}</h1>
+          <p>{{ slides[current].text }}</p>
+          <a href="#contact" class="btn">Randevu Al</a>
+        </div>
+      </div>
+    </transition>
+  </div>
+</template>
+
+<script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+
+const props = defineProps({
+  slides: Array,
+  interval: { type: Number, default: 5000 },
+  height: { type: String, default: '400px' }
+})
+
+const current = ref(0)
+let timer
+
+onMounted(() => {
+  timer = setInterval(() => {
+    current.value = (current.value + 1) % props.slides.length
+  }, props.interval)
+})
+
+onBeforeUnmount(() => clearInterval(timer))
+</script>
+
+<style scoped>
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.slide {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 40px;
+  width: 100%;
+}
+.overlay h1 {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+.overlay p {
+  font-size: 18px;
+}
+.btn {
+  margin-top: 12px;
+  background: #d4af37;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 1s;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>
