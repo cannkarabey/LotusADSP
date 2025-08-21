@@ -1,5 +1,8 @@
 <template>
-  <FadeSlider :slides="slides" :interval="5000" height="600px" />
+  <!-- id=hero EKLENDİ -->
+  <section id="hero" class="hero-section">
+    <FadeSlider :slides="slides" :interval="5000" height="600px" />
+  </section>
 </template>
 
 <script setup>
@@ -23,3 +26,8 @@ const slides = [
   }
 ]
 </script>
+
+<style scoped>
+/* İsteğe bağlı: hero bölümüne ufak bir üst boşluk vs. */
+.hero-section { }
+</style>

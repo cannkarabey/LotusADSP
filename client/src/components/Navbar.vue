@@ -1,8 +1,14 @@
 <template>
   <nav class="nav">
     <div class="container nav-inner">
-      <a class="brand" href="#hero">LOTUS</a>
+      <!-- LOGO -->
+      <a href="#hero" class="logo" aria-label="Go to top">
+        <img :src="logoUrl" alt="Lotus Dental Clinic Logo" />
+      </a>
+
+      <!-- MENÜ -->
       <div class="nav-links">
+        <a href="#hero">{{ t('nav.home') }}</a>  <!-- ✅ ANASAYFA BUTONU -->
         <a href="#about">{{ t('nav.about') }}</a>
         <a href="#treatments">{{ t('nav.treatments') }}</a>
         <a href="#doctors">{{ t('nav.doctors') }}</a>
@@ -13,17 +19,36 @@
   </nav>
 </template>
 
-
 <script setup>
 import { useI18n } from 'vue-i18n'
-import { useRoute } from 'vue-router'
-import LangSwitcher from './LangSwitcher.vue'
+import logoUrl from '../assets/logo.png'
 
 const { t } = useI18n()
-const route = useRoute()
-
-function withLocale(path){
-  const locale = route.params.locale || 'tr'
-  return `/${locale}${path ? '/' + path : ''}`
-}
 </script>
+
+<style scoped>
+.logo img {
+  height: 100px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/* MENÜ */
+.nav-links {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.nav-links a {
+  padding: 10px 8px;
+  text-decoration: none;
+  color: #5f5f5f;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  color: #d4af37;
+}
+</style>

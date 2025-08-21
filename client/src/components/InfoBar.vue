@@ -2,19 +2,19 @@
   <section class="info-bar">
     <div class="info-container">
       <div>
-        <h4>Lotus Dental Clinic</h4>
-        <p>Smile healthy, live happy…</p>
+        <h4>LOTUS Ağız ve Diş Sağlığı Polikliniği</h4>
+        <p>HAYATA SAĞLIKLA GÜLÜMSEYİN…</p>
+        <p>Pazartesi - Cumartesi 10:00 - 22:00</p>
+        <p>Pazar 11:00 - 19:00</p>
       </div>
 
       <div>
-        <h4>Working Hours</h4>
-        <p>Mon – Sat: 10:00 – 22:00</p>
-        <p>Sunday: 11:00 – 19:00</p>
+        <h4>Adres</h4>
+        <p>📍 Şehit Osman Avcı Mah. Malazgirt 1071 Cad. No:43/B Etimesgut/Ankara</p>
       </div>
 
       <div>
-        <h4>Contact</h4>
-        <p>📍 Şehit Osman Avcı Mah. Malazgirt 1071 Cad. No:43/B Etimesgut / Ankara</p>
+        <h4>Telefon</h4>
         <p>📞 0312 577 70 70</p>
         <p>📞 0312 577 70 03</p>
       </div>

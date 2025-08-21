@@ -11,14 +11,14 @@
       rel="noopener noreferrer"
       href="https://www.google.com/maps/search/?api=1&query=%C5%9Eehit%20Osman%20Avc%C4%B1%20Mah.%20Malazgirt%201071%20Cad.%20No%3A43%2FB%20Etimesgut%20Ankara"
     >
-      📍 Şehit Osman Avcı Mah. Malazgirt 1071 Cad. No:43/B Etimesgut / Ankara
+      📍 Şehit Osman Avcı Mah. Malazgirt 1071 Cad. No:43/B Etimesgut/ANKARA
     </a>
 
     <!-- Diller -->
     <button @click="changeLang('tr')" title="Türkçe">🇹🇷</button>
     <button @click="changeLang('en')" title="English">🇬🇧</button>
-    <button @click="changeLang('ar')" title="العربية">🇦🇪</button>
     <button @click="changeLang('fr')" title="Français">🇫🇷</button>
+    <button @click="changeLang('ar')" title="العربية">🇦🇪</button>
   </div>
 </template>
 
@@ -40,19 +40,21 @@ function changeLang(l) {
 .topbar {
   background: #1c1c1c;
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   display: flex;
   justify-content: center; /* ORTALAMA */
   align-items: center;
-  padding: 7px 16px;
+  padding: 16px 16px;
   flex-wrap: wrap;
-  gap: 18px; /* elemanlar arası boşluk */
+  gap: 13px; /* elemanlar arası boşluk */
+  font-weight: 500; /* <-- BURADA TOPBAR GENEL YAZILARI KALINLAŞIR */
 }
 
 .item {
   color: #f3f4f6;
   text-decoration: none;
   white-space: nowrap;
+  font-weight: 700; /* <-- BURADA ÖZELLİKLE KALINLIK */
 }
 .item:hover { text-decoration: underline; }
 

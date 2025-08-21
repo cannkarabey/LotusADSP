@@ -23,7 +23,7 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
-  min-height: 56px;                    /* bar yüksekliği */
+  min-height: 115px;                    /* bar yüksekliği */
 }
 .brand {
   font-weight: 800;
