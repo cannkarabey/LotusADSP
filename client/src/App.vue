@@ -1,5 +1,6 @@
 <template>
   <div class="app-layout" :dir="dir" :lang="currentLocale">
+    <TopBar />
     <Navbar />
     <main class="content">
       <router-view />
@@ -11,6 +12,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
+import TopBar from './components/TopBar.vue'
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
 
