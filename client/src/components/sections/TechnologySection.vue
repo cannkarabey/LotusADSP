@@ -39,7 +39,7 @@ import deviceImg from '../../assets/technology/device.png'
 
 <style scoped>
 /* Bölüm zemini: sayfayla bütün (gölge/radius yok) */
-.tech { padding: 80px 0; background: #fff; }
+.tech { padding: 80px 0; background: #ffffff; }
 
 /* About & InfoSection ile AYNI hizalama */
 .container {

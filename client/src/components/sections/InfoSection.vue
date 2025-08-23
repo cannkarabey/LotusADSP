@@ -44,7 +44,7 @@ import icMonitor   from '../../assets/infosection/monitor.png'
 <style scoped>
 /* AboutSection ile aynı zemin ve padding */
 .info { padding: 80px 0; }
-.light { background: #f3f9fe; }
+.light { background: #f6fbfe; }
 
 /* >>> AboutSection ile aynı container genişliği ve ortalama <<< */
 .container {

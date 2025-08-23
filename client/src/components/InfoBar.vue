@@ -1,5 +1,5 @@
 <template>
-  <section class="info-bar">
+  <section id="info" class="info-bar">
     <div class="info-container">
       <div>
         <h4>LOTUS Ağız ve Diş Sağlığı Polikliniği</h4>

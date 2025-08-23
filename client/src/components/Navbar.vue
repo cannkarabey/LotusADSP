@@ -12,7 +12,7 @@
         <a href="#about">{{ t('nav.about') }}</a>
         <a href="#treatments">{{ t('nav.treatments') }}</a>
         <a href="#doctors">{{ t('nav.doctors') }}</a>
-        <a href="#contact">{{ t('nav.contact') }}</a>
+        <a href="#info">{{ t('nav.contact') }}</a>
         <LangSwitcher />
       </div>
     </div>
@@ -28,7 +28,7 @@ const { t } = useI18n()
 
 <style scoped>
 .logo img {
-  height: 120px;
+  height: 100px;
   width: auto;
   display: block;
   object-fit: contain;

@@ -43,7 +43,7 @@
 <style scoped>
 .about-section {
   padding: 80px 0;
-  background: #f6fbfe;
+  background: #ffffff;
 }
 
 .container {

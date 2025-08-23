@@ -6,7 +6,7 @@
     <TechnologySection />
     <TreatmentsSection />
     <DoctorsSection />
-    <ContactSection />
+    <!-- <ContactSection /> -->
     <ClinicSection />
     <MapSection />
     <InfoBar />
@@ -20,7 +20,7 @@ import InfoSection from '../components/sections/InfoSection.vue'
 import TechnologySection from '../components/sections/TechnologySection.vue'
 import TreatmentsSection from '../components/sections/TreatmentsSection.vue'
 import DoctorsSection from '../components/sections/DoctorsSection.vue'
-import ContactSection from '../components/sections/ContactSection.vue'
+// import ContactSection from '../components/sections/ContactSection.vue'
 import ClinicSection from '../components/sections/ClinicSection.vue'
 import MapSection from '../components/sections/MapSection.vue'
 import InfoBar from '../components/InfoBar.vue'
