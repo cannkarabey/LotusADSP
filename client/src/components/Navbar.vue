@@ -8,7 +8,7 @@
 
       <!-- MENÜ -->
       <div class="nav-links">
-        <a href="#hero">{{ t('nav.home') }}</a>  <!-- ✅ ANASAYFA BUTONU -->
+        <a href="#hero">{{ t('nav.home') }}</a> 
         <a href="#about">{{ t('nav.about') }}</a>
         <a href="#treatments">{{ t('nav.treatments') }}</a>
         <a href="#doctors">{{ t('nav.doctors') }}</a>
@@ -28,7 +28,7 @@ const { t } = useI18n()
 
 <style scoped>
 .logo img {
-  height: 100px;
+  height: 120px;
   width: auto;
   display: block;
   object-fit: contain;

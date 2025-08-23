@@ -10,7 +10,6 @@
         <div class="overlay">
           <h1>{{ slides[current].title }}</h1>
           <p>{{ slides[current].text }}</p>
-          <a href="#contact" class="btn">Randevu Al</a>
         </div>
       </div>
     </transition>
@@ -53,25 +52,32 @@ onBeforeUnmount(() => clearInterval(timer))
   align-items: flex-end;
 }
 .overlay {
-  background: rgba(0, 0, 0, 0.4);
+  /* tam siyah kutu yerine gradient */
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 30%, rgba(0,0,0,0) 100%); /* BURASI YAZININ ARKASINA SİYAHLIK VERİYOR*/
   color: #fff;
-  padding: 40px;
+  padding: 60px;
   width: 100%;
 }
 .overlay h1 {
-  font-size: 44px;
-  margin-bottom: 10px;
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 1.2;
 }
 .overlay p {
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: 400;
+  max-width: 800px;
 }
 .btn {
-  margin-top: 12px;
+  margin-top: 16px;
   background: #d4af37;
   color: #fff;
-  padding: 10px 14px;
+  padding: 12px 18px;
   border-radius: 10px;
   text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
 }
 .fade-enter-active,
 .fade-leave-active {
@@ -82,3 +88,4 @@ onBeforeUnmount(() => clearInterval(timer))
   opacity: 0;
 }
 </style>
+
