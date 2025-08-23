@@ -67,6 +67,14 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      // her zaman hash yerine tam en üste götür
+      return { left: 0, top: 0 }
+    }
+    return { left: 0, top: 0 }
+  }
 })
+
 
 export default router
