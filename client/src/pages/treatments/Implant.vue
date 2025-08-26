@@ -2,29 +2,33 @@
   <section class="treatment-page">
     <!-- Başlık kısmı -->
     <div class="hero">
-      <img :src="headerImg" alt="İmplant Başlık" class="hero-img" />
+      <img
+        :src="headerImg"
+        :alt="t('treatments.cards.implant.title')"
+        class="hero-img"
+      />
     </div>
 
     <!-- İçerik -->
     <div class="container content">
-      <img :src="image" alt="İmplant Tedavisi" class="treatment-img" />
+      <img
+        :src="image"
+        :alt="t('treatments.cards.implant.title')"
+        class="treatment-img"
+      />
 
-      <h2 class="subtitle">İmplant Tedavisi</h2>
-      <p>
-        İmplant tedavisi, eksik dişlerin yerine çene kemiğine yerleştirilen titanyum 
-        vidalar üzerine yapılan yapay diş uygulamasıdır. Doğal diş görünümü ve fonksiyonunu 
-        sağlayan implantlar, günümüzde en güvenilir ve uzun ömürlü tedavi yöntemlerinden biridir.  
-        Çene kemiği ile biyolojik uyum sağlayan titanyumdan üretildikleri için vücut tarafından 
-        kabul edilirler. İmplantlar sayesinde kaybedilen dişlerin fonksiyonel ve estetik olarak 
-        geri kazanılması sağlanır.
-      </p>
+      <h2 class="subtitle">{{ t('treatmentPages.implant.subtitle') }}</h2>
+      <p>{{ t('treatmentPages.implant.desc') }}</p>
     </div>
   </section>
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
 import headerImg from '../../assets/implant/başlık.png'
 import image from '../../assets/implant/image.png'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>

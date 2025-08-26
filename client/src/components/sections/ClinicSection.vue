@@ -1,7 +1,7 @@
 <template>
   <section id="clinic" class="clinic-section">
     <div class="container">
-      <h2 class="title">Kliniğimiz</h2>
+      <h2 class="title">{{ t('clinic.title') }}</h2>
 
       <!-- Galeri Grid -->
       <div class="gallery">
@@ -11,7 +11,7 @@
           class="gallery-item"
           @click="open(i)"
         >
-          <img :src="img" :alt="`Klinik Fotoğrafı ${i+1}`" />
+          <img :src="img" :alt="t('clinic.photoAlt', { n: i+1 })" />
         </div>
       </div>
     </div>
@@ -28,7 +28,7 @@
         <img
           class="lightbox-img"
           :src="images[currentIndex]"
-          :alt="`Klinik Fotoğrafı ${currentIndex+1}`"
+          :alt="t('clinic.photoAlt', { n: currentIndex+1 })"
         />
       </div>
     </transition>
@@ -37,6 +37,9 @@
 
 <script setup>
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 // Görseller
 import image1 from '../../assets/clinic/image1.png'
@@ -65,11 +68,11 @@ const currentIndex = ref(0)
 function open(i) {
   currentIndex.value = i
   isOpen.value = true
-  document.body.style.overflow = 'hidden' // scroll kilitle
+  document.body.style.overflow = 'hidden'
 }
 function close() {
   isOpen.value = false
-  document.body.style.overflow = '' // scroll aç
+  document.body.style.overflow = ''
 }
 function next() {
   currentIndex.value = (currentIndex.value + 1) % images.length
@@ -80,16 +83,8 @@ function prev() {
 </script>
 
 <style scoped>
-.clinic-section {
-  padding: 80px 0;
-  background: #f6fbfe;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
+.clinic-section { padding: 80px 0; background: #f6fbfe; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
 
 /* Başlık */
 .title {
@@ -116,9 +111,7 @@ function prev() {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 16px;
 }
-.gallery-item {
-  cursor: pointer;
-}
+.gallery-item { cursor: pointer; }
 .gallery-item img {
   width: 100%;
   height: 200px;
@@ -126,21 +119,16 @@ function prev() {
   border-radius: 8px;
   transition: transform .3s ease;
 }
-.gallery-item img:hover {
-  transform: scale(1.05);
-}
+.gallery-item img:hover { transform: scale(1.05); }
 
 /* Lightbox */
 .fade-enter-active, .fade-leave-active { transition: opacity .3s; }
 .fade-enter-from, .fade-leave-to { opacity: 0; }
 
 .lightbox {
-  position: fixed;
-  inset: 0;
+  position: fixed; inset: 0;
   background: rgba(0,0,0,.9);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; align-items: center; justify-content: center;
   z-index: 9999;
 }
 .lightbox-img {
@@ -153,15 +141,10 @@ function prev() {
 .nav, .close {
   position: absolute;
   background: rgba(255,255,255,.15);
-  border: none;
-  color: #fff;
-  font-size: 36px;
-  cursor: pointer;
-  border-radius: 50%;
-  width: 48px; height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: none; color: #fff;
+  font-size: 36px; cursor: pointer;
+  border-radius: 50%; width: 48px; height: 48px;
+  display: flex; align-items: center; justify-content: center;
 }
 .nav:hover, .close:hover { background: rgba(255,255,255,.25); }
 

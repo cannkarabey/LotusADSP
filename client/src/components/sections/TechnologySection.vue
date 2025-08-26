@@ -2,31 +2,23 @@
   <section id="technology" class="tech">
     <div class="container">
       <!-- ÜST BAŞLIK -->
-      <h2 class="title">Teknoloji Destekli Güncel Tedaviler</h2>
+      <h2 class="title">{{ t('technology.title') }}</h2>
 
       <!-- İÇERİK GRID -->
       <div class="grid">
-        <!-- Sol metin: görselin SOLUNA hizalı -->
+        <!-- Sol metin -->
         <div class="left">
-          <p>
-            Güncel teknolojik sistemler, tedavide hem zaman tasarrufu, hem de konfor sağlamaktadır.
-            Hayatımızın her alanında olduğu gibi diş hekimliğinde de büyük yenilikler sağlayan
-            teknolojik gelişmeler sayesinde tedavilerinizde konforu ve rahatlığı yaşayın..
-          </p>
+          <p>{{ t('technology.top') }}</p>
         </div>
 
         <!-- Sağ görsel -->
         <div class="imageWrap">
-          <img :src="deviceImg" alt="Dental teknoloji cihazı" />
+          <img :src="deviceImg" :alt="t('technology.alt')" />
         </div>
 
-        <!-- Alt metin: görselin ALTINA hizalı -->
+        <!-- Alt metin -->
         <div class="bottom">
-          <p>
-            3 boyutlu görüntüleme (Tomografi), dijital ölçü ve dijital yazıcı sistemleri ile
-            tedavinizi hızla tamamlamanızı sağlayan diş protez tasarımları ve daha fazlasını
-            tecrübeli doktorlarımızla hizmetinize sunmaktayız.
-          </p>
+          <p>{{ t('technology.bottom') }}</p>
         </div>
       </div>
     </div>
@@ -34,21 +26,21 @@
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
 import deviceImg from '../../assets/technology/device.png'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>
-/* Bölüm zemini: sayfayla bütün (gölge/radius yok) */
 .tech { padding: 80px 0; background: #ffffff; }
 
-/* About & InfoSection ile AYNI hizalama */
 .container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Başlık üstte, ortalı ve küçük çizgi */
 .title {
   text-align: center;
   font-size: 28px;
@@ -67,10 +59,6 @@ import deviceImg from '../../assets/technology/device.png'
   opacity: .8;
 }
 
-/* İki satırlı, iki kolonlu düzen:
-   left  | image
-   bottom| image
-*/
 .grid {
   display: grid;
   grid-template-columns: 1fr 520px;
@@ -81,7 +69,6 @@ import deviceImg from '../../assets/technology/device.png'
   align-items: center;
 }
 
-/* Sol metin */
 .left { grid-area: left; }
 .left p {
   margin: 0;
@@ -90,18 +77,15 @@ import deviceImg from '../../assets/technology/device.png'
   color: #374151;
 }
 
-/* Alt metin (görselin altına oturur) */
 .bottom { grid-area: bottom; }
 .bottom p {
   margin: 0;
   font-size: 16px;
   line-height: 1.65;
   color: #374151;
-  /* ss’deki gibi biraz daha açık ton ve ortalama hissi */
   text-align: left;
 }
 
-/* Görsel: gölge & radius YOK -> sayfayla bütün */
 .imageWrap { grid-area: image; }
 .imageWrap img {
   display: block;
@@ -111,7 +95,6 @@ import deviceImg from '../../assets/technology/device.png'
   box-shadow: none;
 }
 
-/* Responsive */
 @media (max-width: 980px) {
   .grid {
     grid-template-columns: 1fr;

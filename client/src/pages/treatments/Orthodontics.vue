@@ -2,29 +2,33 @@
   <section class="treatment-page">
     <!-- Başlık kısmı -->
     <div class="hero">
-      <img :src="headerImg" alt="Ortodonti Başlık" class="hero-img" />
+      <img
+        :src="headerImg"
+        :alt="t('treatments.cards.orthodontics.title')"
+        class="hero-img"
+      />
     </div>
 
     <!-- İçerik -->
     <div class="container content">
-      <img :src="image" alt="Ortodonti" class="treatment-img" />
+      <img
+        :src="image"
+        :alt="t('treatments.cards.orthodontics.title')"
+        class="treatment-img"
+      />
 
-      <h2 class="subtitle">Ortodonti</h2>
-      <p>
-        Ortodonti, diş ve çene bozukluklarının teşhis ve tedavisiyle ilgilenen diş hekimliği dalıdır.  
-        Dişlerin çapraşık, aralıklı veya yanlış pozisyonda olması estetik kaygıların yanı sıra çiğneme, 
-        konuşma ve ağız sağlığını da olumsuz etkiler.  
-        Günümüzde metal braketler, şeffaf plaklar (Invisalign) ve estetik braketler gibi birçok farklı 
-        tedavi yöntemi uygulanmaktadır. Ortodonti sayesinde hem estetik bir gülüş hem de fonksiyonel bir 
-        çene-diş yapısı elde edilir.
-      </p>
+      <h2 class="subtitle">{{ t('treatmentPages.orthodontics.subtitle') }}</h2>
+      <p>{{ t('treatmentPages.orthodontics.desc') }}</p>
     </div>
   </section>
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
 import headerImg from '../../assets/orthodontics/başlık.png'
 import image from '../../assets/orthodontics/image.png'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>

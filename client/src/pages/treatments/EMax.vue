@@ -2,28 +2,33 @@
   <section class="treatment-page">
     <!-- Başlık kısmı (arka planda görsel) -->
     <div class="hero">
-      <img :src="headerImg" alt="E-Max Kaplama Başlık" class="hero-img" />
+      <img
+        :src="headerImg"
+        :alt="t('treatments.cards.emax.title')"
+        class="hero-img"
+      />
     </div>
 
     <!-- İçerik -->
     <div class="container content">
-      <img :src="image" alt="E-Max Kaplama" class="treatment-img" />
+      <img
+        :src="image"
+        :alt="t('treatments.cards.emax.title')"
+        class="treatment-img"
+      />
 
-      <h2 class="subtitle">E-max Kaplama</h2>
-      <p>
-        Herhangi bir metal altyapı kullanmadan basınç altında sıkışması sağlanan kristal yapılı
-        seramik çekirdek üzerine cam seramiğin pişirilmesi ile elde edilen ve bu şekilde dayanıklılığı
-        arttırılmış porselendir. Işık geçirgenliğinin çok yüksek olmasından ve metal içeriğinin
-        bulunmamasından kaynaklı diş protezlerinde tercih edilen en estetik malzemelerdendir.
-        Lamine uygulamalarında da sık sık tercih edilir.
-      </p>
+      <h2 class="subtitle">{{ t('treatmentPages.emax.subtitle') }}</h2>
+      <p>{{ t('treatmentPages.emax.desc') }}</p>
     </div>
   </section>
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
 import headerImg from '../../assets/emax/başlık.png'
 import image from '../../assets/emax/image.png'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>

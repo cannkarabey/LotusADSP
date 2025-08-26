@@ -1,9 +1,160 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About",
+    "about": "About Us",
     "treatments": "Treatments",
-    "doctors": "Doctors",
+    "doctors": "Our Doctors",
     "contact": "Contact"
+  },
+
+  "hero": {
+    "slide1": {
+      "title": "Implant Treatment",
+      "text": "With dental implants, you can have complete, healthy, and perfect smiles."
+    },
+    "slide2": {
+      "title": "Immediate Implant Treatment",
+      "text": "If your bone condition is suitable, you can get your implant teeth on the same day."
+    }
+  },
+
+  "about": {
+    "title": "About Us",
+    "lead1": "Lotus Dental Clinic operates in the Eryaman district of Etimesgut, Ankara. It aims to provide services in the field of oral and dental health with computerized tomography devices.",
+    "lead2": "Lotus Dental Clinic, consisting of professional dentists, works in a multidisciplinary manner to ensure the successful diagnosis and treatment of patients.",
+    "branches": {
+      "eryaman": {
+        "title": "Eryaman / ANKARA",
+        "address": "Şehit Osman Avcı Neighborhood 1071st Street 43/B",
+        "phone1": "0312 577 70 70",
+        "phone2": "0312 577 70 03",
+        "mobile": "0552 881 2071",
+        "addressLine": "Şehit Osman Avcı Mah. Malazgirt 1071 St. No:43/B Etimesgut/ANKARA"
+      },
+      "etlik": {
+        "title": "Etlik / ANKARA",
+        "address": "Ayvalı Neighborhood Gazze Street No: 15/A-B",
+        "phone1": "0312 514 70 09",
+        "phone2": "0312 514 70 99"
+      },
+      "burhaniye": {
+        "title": "Burhaniye / BALIKESİR",
+        "address": "Mahkeme Neighborhood Saip Hoca Boulevard No: 10/C",
+        "phone1": "0266 412 12 44"
+      }
+    }
+  },
+
+  "features": {
+    "items": {
+      "team": {
+        "title": "Experienced Team of Dentists",
+        "text": "Patient satisfaction-oriented and friendly staff"
+      },
+      "checkup": {
+        "title": "Detailed Examination",
+        "text": "The most accurate treatment planning for oral and dental health"
+      },
+      "tech": {
+        "title": "Modern Technological Approaches",
+        "text": "Advanced digital imaging systems"
+      }
+    }
+  },
+
+  "technology": {
+    "title": "Technology-Supported Modern Treatments",
+    "top": "Modern technological systems provide both time efficiency and comfort in treatment. Just like in every field of our lives, innovations in dentistry allow you to experience comfort and convenience in your treatments.",
+    "bottom": "With 3D imaging (tomography), digital measurement and digital printer systems, we offer prosthetic designs that allow you to complete your treatment quickly, along with much more, with our experienced doctors."
+  },
+
+  "treatments": {
+    "title": "Our Treatments",
+    "lead": "In our clinic; Surgery, Prosthodontics, Orthodontics, Periodontology, Endodontics, and Restorative treatments are offered in the highest quality and safest way by our experienced team.",
+    "more": "Learn More...",
+    "cards": {
+      "emax": { "title": "E-Max Crown", "slug": "emax-kaplama" },
+      "zirconium": { "title": "Zirconium Crown", "slug": "zirkonyum-kaplama" },
+      "laminate": { "title": "Laminate (Veneer)", "slug": "laminate-yaprak-dis" },
+      "implant": { "title": "Implant Treatment", "slug": "implant-tedavisi" },
+      "immediate": { "title": "Immediate Implant", "slug": "immediat-anlik-implant" },
+      "bleaching": { "title": "Teeth Whitening (Bleaching)", "slug": "beyazlatma-bleaching" },
+      "inleyOnley": { "title": "Inlay / Onlay", "slug": "inley-onley" },
+      "endodontics": { "title": "Root Canal Treatment", "slug": "kanal-tedavisi" },
+      "orthodontics": { "title": "Orthodontic Treatments", "slug": "ortodontik-tedaviler" },
+      "pedodontics": { "title": "Pediatric Dentistry", "slug": "cocuk-dis-hekimligi" }
+    }
+  },
+
+  "doctors": {
+    "title": "Our Doctors",
+    "list": {
+      "buse": { "name": "Dt. Buse Nur TOPLU" },
+      "zeynep": { "name": "Dt. Zeyneb Nefise MERTOĞLU" },
+      "emel": { "name": "Dr. Emel Gülin YEŞİLBAĞ" },
+      "omer": { "name": "Dt. Ömer Faruk KARABEY" },
+      "menekse": { "name": "Dt. Menekşe Nur KURNAZ" }
+    }
+  },
+
+  "clinic": { "title": "Our Clinic" },
+
+  "map": { "title": "Our Location", "open": "Open in Google Maps" },
+
+  "info": {
+    "title": "LOTUS Dental Clinic",
+    "slogan": "SMILE TO LIFE WITH HEALTH…",
+    "weekdays": "Monday - Saturday 10:00 - 22:00",
+    "sunday": "Sunday 11:00 - 19:00",
+    "addressTitle": "Address",
+    "address": "Şehit Osman Avcı Mah. Malazgirt 1071 St. No:43/B Etimesgut/ANKARA",
+    "phoneTitle": "Phone",
+    "phone1": "0312 577 70 70",
+    "phone2": "0312 577 70 03"
+  },
+
+  "footer": { "text": "© 2025 Lotus Clinic. All rights reserved." },
+
+  "treatmentPages": {
+    "emax": {
+      "subtitle": "E-Max Crown",
+      "desc": "It is a porcelain obtained by firing glass ceramic onto a crystalline ceramic core compressed under pressure without using any metal infrastructure, thereby increasing its durability. Due to its very high light transmittance and the absence of metal content, it is one of the most aesthetic materials preferred in dental prostheses. It is also frequently preferred in laminate applications."
+    },
+    "zirconium": {
+      "subtitle": "Zirconium Crown",
+      "desc": "Zirconium is a material used as a substructure in bridge and prosthesis applications of traditional porcelain. This material is known as a white-colored substructure applied instead of gray metal. Zirconium dental crowns have become one of the most frequently preferred applications in dentistry in recent years. One of the main reasons zirconium is preferred in dental crown applications is that it produces highly effective aesthetic results. Zirconium crowns are applied to teeth with advanced discoloration where functional results cannot be achieved with teeth whitening procedures."
+    },
+    "laminate": {
+      "subtitle": "Laminate (Veneer)",
+      "desc": "Laminate veneer, also known as leaf porcelain crown in everyday language, is a procedure frequently preferred in aesthetic dentistry. In this method, very thin porcelain layers are bonded only to the front surface of the front teeth. Since minimal abrasion is performed on the teeth, the natural tooth tissue is preserved. It offers an aesthetic and fast solution, especially for correcting discolorations, minor crowding, gaps, and shape irregularities in the teeth."
+    },
+    "implant": {
+      "subtitle": "Implant Treatment",
+      "desc": "Implant treatment is an artificial tooth application performed on titanium screws placed into the jawbone to replace missing teeth. Implants, which provide the appearance and function of natural teeth, are among the most reliable and long-lasting treatment methods today. Since they are made of titanium, which is biologically compatible with the jawbone, they are accepted by the body. Thanks to implants, lost teeth can be restored both functionally and aesthetically."
+    },
+    "immediate": {
+      "subtitle": "Immediate Implant",
+      "desc": "Immediate implant treatment is the procedure of placing the implant into the socket of the extracted tooth in the same session. Thanks to this method, patients can start implant treatment immediately after tooth extraction and achieve functional and aesthetic teeth in a shorter time. It is preferred in patients with suitable bone structure and gum health. Compared to the traditional method, it significantly shortens the treatment period and provides aesthetically satisfying results with temporary prostheses on the same day."
+    },
+    "bleaching": {
+      "subtitle": "Teeth Whitening (Bleaching)",
+      "desc": "Teeth whitening is an aesthetic treatment method applied to eliminate discolorations and yellowing that occur in the teeth over time. In addition to daily habits such as tea, coffee, and smoking, aging also causes color changes in the teeth. The bleaching method removes these discolorations, giving the teeth a whiter and more aesthetic appearance. There are in-office whitening procedures performed by the dentist in a clinical setting and at-home whitening methods with custom-made trays. The procedure is short in duration, with fast and reliable results."
+    },
+    "inleyonley": {
+      "subtitle": "Inlay / Onlay",
+      "desc": "Inlay and onlay fillings are special restorations used in cases where decay or material loss in the teeth cannot be fully treated with a traditional filling but does not require a crown. They are prepared in a laboratory from porcelain or composite material and bonded to the tooth. While inlays cover a small portion of the tooth, onlays cover larger areas. This method provides both an aesthetic and durable restoration. Preserving the natural tooth structure to the maximum extent, this application offers a long-lasting and reliable solution."
+    },
+    "endodontics": {
+      "subtitle": "Root Canal Treatment",
+      "desc": "Root canal treatment is a procedure applied when the nerve and blood tissue (pulp) inside the tooth becomes inflamed or damaged. In this process, the infected or damaged pulp tissue is removed, the inside of the tooth is cleaned, and it is sealed with special filling materials. Thanks to root canal treatment, a tooth that would otherwise need to be extracted can be preserved in the mouth and continue to function healthily for many years. With modern devices and techniques, root canal treatment can be completed both quickly and painlessly."
+    },
+    "orthodontics": {
+      "subtitle": "Orthodontic Treatments",
+      "desc": "Orthodontics is a branch of dentistry that deals with the diagnosis and treatment of dental and jaw disorders. Crooked, spaced, or misaligned teeth not only cause aesthetic concerns but also negatively affect chewing, speech, and oral health. Today, many different treatment methods are applied, such as metal braces, clear aligners (Invisalign), and aesthetic brackets. Thanks to orthodontics, both an aesthetic smile and a functional jaw-tooth structure can be achieved."
+    },
+    "pedodontics": {
+      "subtitle": "Pediatric Dentistry",
+      "desc": "Pedodontics is the branch of dentistry that aims to protect and treat the health of children’s primary and permanent teeth. Pedodontics is of great importance for ensuring the proper development of children’s teeth, preventing cavities, and instilling oral hygiene habits. With fluoride applications, fissure sealant treatments, and preventive filling methods, children’s teeth are protected from decay. In addition, dental injuries caused by trauma and early tooth loss in children also fall within the scope of pedodontics. Thanks to pedodontics, children can have both a healthy and aesthetic dental structure."
+    }
   }
 }

@@ -2,29 +2,33 @@
   <section class="treatment-page">
     <!-- Başlık kısmı -->
     <div class="hero">
-      <img :src="headerImg" alt="İnley Onley Başlık" class="hero-img" />
+      <img
+        :src="headerImg"
+        :alt="t('treatments.cards.inleyOnley.title')"
+        class="hero-img"
+      />
     </div>
 
     <!-- İçerik -->
     <div class="container content">
-      <img :src="image" alt="İnley Onley" class="treatment-img" />
+      <img
+        :src="image"
+        :alt="t('treatments.cards.inleyOnley.title')"
+        class="treatment-img"
+      />
 
-      <h2 class="subtitle">İnley – Onley Dolgular</h2>
-      <p>
-        İnley ve onley dolgular, dişlerdeki çürük veya madde kaybının klasik dolgu ile tam 
-        tedavi edilemediği ancak kaplama gerektirmediği durumlarda kullanılan özel restorasyonlardır.  
-        Laboratuvar ortamında porselen veya kompozit materyalden hazırlanarak dişe yapıştırılır.  
-        İnley dolgular dişin küçük bir kısmını kaplarken, onley dolgular daha geniş alanları örter.  
-        Bu yöntem sayesinde hem estetik hem de dayanıklı bir restorasyon elde edilir.  
-        Doğal diş dokusunu maksimum seviyede koruyan bu uygulama, uzun ömürlü ve güvenilir bir çözümdür.
-      </p>
+      <h2 class="subtitle">{{ t('treatmentPages.inleyonley.subtitle') }}</h2>
+      <p>{{ t('treatmentPages.inleyonley.desc') }}</p>
     </div>
   </section>
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
 import headerImg from '../../assets/inley-onley/başlık.png'
 import image from '../../assets/inley-onley/image.png'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>

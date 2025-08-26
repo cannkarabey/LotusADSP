@@ -2,29 +2,33 @@
   <section class="treatment-page">
     <!-- Başlık kısmı -->
     <div class="hero">
-      <img :src="headerImg" alt="Immediate İmplant Başlık" class="hero-img" />
+      <img
+        :src="headerImg"
+        :alt="t('treatments.cards.immediate.title')"
+        class="hero-img"
+      />
     </div>
 
     <!-- İçerik -->
     <div class="container content">
-      <img :src="image" alt="Immediate İmplant" class="treatment-img" />
+      <img
+        :src="image"
+        :alt="t('treatments.cards.immediate.title')"
+        class="treatment-img"
+      />
 
-      <h2 class="subtitle">Anlık (Immediate) İmplant</h2>
-      <p>
-        Immediate implant tedavisi, çekilen dişin boşluğuna aynı seansta implantın yerleştirilmesi 
-        işlemidir. Bu yöntem sayesinde hastalar diş çekiminden hemen sonra implant tedavisine başlamış 
-        olur ve daha kısa sürede fonksiyonel ve estetik dişlere kavuşurlar.  
-        Kemik yapısı ve diş eti sağlığı uygun olan hastalarda tercih edilir. Geleneksel yönteme göre 
-        tedavi süresini ciddi ölçüde kısaltır ve aynı gün geçici protezlerle estetik açıdan tatmin edici 
-        sonuçlar elde edilebilir.
-      </p>
+      <h2 class="subtitle">{{ t('treatmentPages.immediate.subtitle') }}</h2>
+      <p>{{ t('treatmentPages.immediate.desc') }}</p>
     </div>
   </section>
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
 import headerImg from '../../assets/immediate/başlık.png'
 import image from '../../assets/immediate/image.png'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>

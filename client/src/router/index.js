@@ -64,17 +64,27 @@ const routes = [
   },
 ]
 
+// const router = createRouter({
+//   history: createWebHistory(),
+//   routes,
+//   scrollBehavior(to, from, savedPosition) {
+//     if (to.hash) {
+//       // her zaman hash yerine tam en üste götür
+//       return { left: 0, top: 0 }
+//     }
+//     return { left: 0, top: 0 }
+//   }
+// })
+// src/router/index.js
+
 const router = createRouter({
   history: createWebHistory(),
   routes,
-  scrollBehavior(to, from, savedPosition) {
-    if (to.hash) {
-      // her zaman hash yerine tam en üste götür
-      return { left: 0, top: 0 }
-    }
-    return { left: 0, top: 0 }
+  scrollBehavior(to, _from, saved) {
+    if (saved) return saved
+    if (to.hash) return { el: to.hash, top: 0, behavior: 'smooth' }
+    return { top: 0, behavior: 'smooth' }
   }
 })
-
 
 export default router

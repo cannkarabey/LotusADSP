@@ -1,31 +1,34 @@
 <template>
   <section class="treatment-page">
-    <!-- Başlık kısmı -->
+    <!-- Başlık görseli -->
     <div class="hero">
-      <img :src="headerImg" alt="Diş Beyazlatma Başlık" class="hero-img" />
+      <img
+        :src="headerImg"
+        :alt="t('treatments.cards.bleaching.title')"
+        class="hero-img"
+      />
     </div>
 
     <!-- İçerik -->
     <div class="container content">
-      <img :src="image" alt="Diş Beyazlatma" class="treatment-img" />
+      <img
+        :src="image"
+        :alt="t('treatments.cards.bleaching.title')"
+        class="treatment-img"
+      />
 
-      <h2 class="subtitle">Diş Beyazlatma (Bleaching)</h2>
-      <p>
-        Diş beyazlatma, dişlerde zamanla oluşan renklenmeleri ve sararmaları gidermek için uygulanan 
-        estetik bir tedavi yöntemidir. Günlük tüketilen çay, kahve, sigara gibi alışkanlıkların yanı sıra 
-        yaşlanma ile dişlerde renk değişimleri meydana gelir. Bleaching yöntemi, bu renklenmeleri gidererek 
-        dişlerin daha beyaz ve estetik bir görünüme kavuşmasını sağlar.  
-        Klinik ortamında hekim tarafından uygulanan ofis tipi beyazlatma veya kişiye özel plaklarla yapılan 
-        ev tipi beyazlatma yöntemleri mevcuttur. Uygulama süresi kısa, sonuçları hızlı ve güvenilir bir 
-        işlemdir.
-      </p>
+      <h2 class="subtitle">{{ t('treatmentPages.bleaching.subtitle') }}</h2>
+      <p>{{ t('treatmentPages.bleaching.desc') }}</p>
     </div>
   </section>
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
 import headerImg from '../../assets/bleaching/başlık.png'
 import image from '../../assets/bleaching/image.png'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>

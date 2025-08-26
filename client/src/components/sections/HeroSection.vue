@@ -1,33 +1,36 @@
 <template>
-  <!-- id=hero EKLENDİ -->
   <section id="hero" class="hero-section">
     <FadeSlider :slides="slides" :interval="5000" height="600px" />
   </section>
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
+import { computed } from 'vue'
 import FadeSlider from '../ui/FadeSlider.vue'
 
 import hero1 from '../../assets/hero/implant-1.jpg'
 import hero2 from '../../assets/hero/implant-2.jpg'
 
-const slides = [
+const { t } = useI18n()
+
+// Dil değiştiğinde otomatik güncellenir
+const slides = computed(() => [
   {
     image: hero1,
-    alt: 'Implant Tedavisi görseli',
-    title: 'Implant Tedavisi',
-    text: 'Dental implantlar sayesinde eksiksiz, sağlıklı ve mükemmel gülüşlere sahip olabilirsiniz.'
+    alt: t('hero.slide1.alt'),
+    title: t('hero.slide1.title'),
+    text: t('hero.slide1.text')
   },
   {
     image: hero2,
-    alt: 'Immediate implant görseli',
-    title: 'Anlık (Immediate) Implant Tedavisi',
-    text: 'Kemik durumunuz, anlık (İmmediat) implant tedavisine uygunsa aynı gün içerisinde dişlerinize kavuşabilirsiniz.'
+    alt: t('hero.slide2.alt'),
+    title: t('hero.slide2.title'),
+    text: t('hero.slide2.text')
   }
-]
+])
 </script>
 
 <style scoped>
-/* İsteğe bağlı: hero bölümüne ufak bir üst boşluk vs. */
 .hero-section { }
 </style>

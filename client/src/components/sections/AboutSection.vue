@@ -1,44 +1,42 @@
 <template>
   <section id="about" class="about-section">
     <div class="container">
-      <h2>Hakkımızda</h2>
+      <h2>{{ t('about.title') }}</h2>
       <div class="divider"></div>
 
-      <p class="lead">
-        Lotus ağız ve diş sağlığı polikliniği Ankara’nın Etimesgut ilçesinin Eryaman Mahallesinde hizmet vermektedir. 
-        Bilgisayarlı tomografi cihazları ile ağız ve diş sağlığı alanında hizmet vermeyi amaçlıyor.
-      </p>
-
-      <p class="lead">
-        Lotus ağız ve diş sağlığı polikliniği profesyonel diş hekimlerinden oluşan, ekip tarafından multidisipliner bir şekilde çalışarak 
-        hastanın tanı ve tedavisinin başarılı bir şekilde gerçekleştirilmesini hedeflemektedir.
-      </p>
+      <p class="lead">{{ t('about.lead1') }}</p>
+      <p class="lead">{{ t('about.lead2') }}</p>
 
       <!-- Şubeler -->
       <div class="branches">
         <div class="branch">
-          <h3>Eryaman / ANKARA</h3>
-          <p>Şehit Osman Avcı Mahallesi 1071.cadde 43/B</p>
-          <p>0312 577 70 70 / 03</p>
-          <p>0552 881 2071</p>
+          <h3>{{ t('about.branches.eryaman.title') }}</h3>
+          <p>{{ t('about.branches.eryaman.address') }}</p>
+          <p>{{ t('about.branches.eryaman.phone1') }}</p>
+          <p>{{ t('about.branches.eryaman.phone2') }}</p>
         </div>
 
         <div class="branch">
-          <h3>Etlik / ANKARA</h3>
-          <p>Ayvalı Mahallesi Gazze caddesi No : 15/A-B</p>
-          <p>0312 514 70 09</p>
-          <p>0312 514 70 99</p>
+          <h3>{{ t('about.branches.etlik.title') }}</h3>
+          <p>{{ t('about.branches.etlik.address') }}</p>
+          <p>{{ t('about.branches.etlik.phone1') }}</p>
+          <p>{{ t('about.branches.etlik.phone2') }}</p>
         </div>
 
         <div class="branch">
-          <h3>Burhaniye / BALIKESİR</h3>
-          <p>Mahkeme Mahallesi Saip Hoca Bulvarı No : 10/C</p>
-          <p>0266 412 12 44</p>
+          <h3>{{ t('about.branches.burhaniye.title') }}</h3>
+          <p>{{ t('about.branches.burhaniye.address') }}</p>
+          <p>{{ t('about.branches.burhaniye.phone1') }}</p>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<script setup>
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+</script>
 
 <style scoped>
 .about-section {
@@ -47,9 +45,9 @@
 }
 
 .container {
-  max-width: 1000px;   /* Orta genişlik */
+  max-width: 1000px;
   margin: 0 auto;
-  text-align: center;  /* Ortala */
+  text-align: center;
   padding: 0 20px;
 }
 
@@ -74,10 +72,10 @@ h2 {
 
 .branches {
   display: flex;
-  justify-content: center; /* Ortala */
+  justify-content: center;
   gap: 40px;
   margin-top: 40px;
-  flex-wrap: wrap; /* küçük ekranda alt alta gelsin */
+  flex-wrap: wrap;
 }
 
 .branch {

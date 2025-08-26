@@ -1,24 +1,19 @@
 <template>
   <section id="treatments" class="section light">
     <div class="container">
-      <h2 class="title">Tedavilerimiz</h2>
-      <p class="lead">
-        Kliniğimizde; Cerrahi, Protez, Ortodonti, Periodontoloji, Endodonti ve Restoratif tüm tedavileri;
-        <br>
-        tecrübeli hekim kadromuz sayesinde sizlere en iyi kalite ve sağlıklı bir şekilde sunmaktayız..
-        </br>
-      </p>
+      <h2 class="title">{{ t('treatments.title') }}</h2>
+      <p class="lead">{{ t('treatments.lead') }}</p>
 
       <div class="grid">
         <RouterLink
-          v-for="t in treatments"
-          :key="t.slug"
+          v-for="it in items"
+          :key="it.key"
           class="card"
-          :to="localePath(`/treatments/${t.slug}`)"
+          :to="localePath(`/treatments/${t(`treatments.cards.${it.key}.slug`)}`)"
         >
-          <img :src="t.icon" :alt="t.title" />
-          <h3>{{ t.title }}</h3>
-          <span class="more">Daha Fazla Bilgi…</span>
+          <img :src="it.icon" :alt="t(`treatments.cards.${it.key}.title`)" />
+          <h3>{{ t(`treatments.cards.${it.key}.title`) }}</h3>
+          <span class="more">{{ t('treatments.more') }}</span>
         </RouterLink>
       </div>
     </div>
@@ -26,9 +21,10 @@
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 
-/* İKONLAR (assets/treatments/ klasöründeki png dosyaları) */
+/* İKONLAR */
 import icEmax       from '../../assets/treatments/emax.png'
 import icZirkon     from '../../assets/treatments/zirconium.png'
 import icLamina     from '../../assets/treatments/laminate.png'
@@ -40,24 +36,25 @@ import icEndo       from '../../assets/treatments/endodontics.png'
 import icOrtho      from '../../assets/treatments/orthodontics.png'
 import icPedodonti  from '../../assets/treatments/pedodonti.png'
 
+const { t } = useI18n()
 const route = useRoute()
 function localePath(path) {
   const loc = route.params.locale
   return loc ? `/${loc}${path}` : path
 }
 
-/* SS’teki sıraya göre 10 tedavi */
-const treatments = [
-  { slug: 'emax-kaplama',           title: 'E-Max Kaplama',            icon: icEmax },
-  { slug: 'zirkonyum-kaplama',      title: 'Zirkonyum Kaplama',        icon: icZirkon },
-  { slug: 'laminate-yaprak-dis',    title: 'Laminate (Yaprak Diş)',    icon: icLamina },
-  { slug: 'implant-tedavisi',       title: 'Implant Tedavisi',         icon: icImplant },
-  { slug: 'immediat-anlik-implant', title: 'Immediat (Anlık) Implant', icon: icImmediate },
-  { slug: 'beyazlatma-bleaching',   title: 'Beyazlatma (Bleaching)',   icon: icBleach },
-  { slug: 'inley-onley',            title: 'İnley / Onley',            icon: icInleyOnley },
-  { slug: 'kanal-tedavisi',         title: 'Kanal Tedavisi',           icon: icEndo },
-  { slug: 'ortodontik-tedaviler',   title: 'Ortodontik Tedaviler',     icon: icOrtho },
-  { slug: 'cocuk-dis-hekimligi',    title: 'Çocuk Diş Hekimliği',      icon: icPedodonti }
+/* Tedavi key’leri */
+const items = [
+  { key: 'emax',        icon: icEmax },
+  { key: 'zirconium',   icon: icZirkon },
+  { key: 'laminate',    icon: icLamina },
+  { key: 'implant',     icon: icImplant },
+  { key: 'immediate',   icon: icImmediate },
+  { key: 'bleaching',   icon: icBleach },
+  { key: 'inleyOnley',  icon: icInleyOnley },
+  { key: 'endodontics', icon: icEndo },
+  { key: 'orthodontics',icon: icOrtho },
+  { key: 'pedodontics', icon: icPedodonti }
 ]
 </script>
 

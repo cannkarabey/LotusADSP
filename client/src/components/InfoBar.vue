@@ -2,25 +2,30 @@
   <section id="info" class="info-bar">
     <div class="info-container">
       <div>
-        <h4>LOTUS Ağız ve Diş Sağlığı Polikliniği</h4>
-        <p>HAYATA SAĞLIKLA GÜLÜMSEYİN…</p>
-        <p>Pazartesi - Cumartesi 10:00 - 22:00</p>
-        <p>Pazar 11:00 - 19:00</p>
+        <h4>{{ t('info.title') }}</h4>
+        <p>{{ t('info.slogan') }}</p>
+        <p>{{ t('info.weekdays') }}</p>
+        <p>{{ t('info.sunday') }}</p>
       </div>
 
       <div>
-        <h4>Adres</h4>
-        <p>📍 Şehit Osman Avcı Mah. Malazgirt 1071 Cad. No:43/B Etimesgut/Ankara</p>
+        <h4>{{ t('info.addressTitle') }}</h4>
+        <p>📍 {{ t('info.address') }}</p>
       </div>
 
       <div>
-        <h4>Telefon</h4>
-        <p>📞 0312 577 70 70</p>
-        <p>📞 0312 577 70 03</p>
+        <h4>{{ t('info.phoneTitle') }}</h4>
+        <p>📞 {{ t('info.phone1') }}</p>
+        <p>📞 {{ t('info.phone2') }}</p>
       </div>
     </div>
   </section>
 </template>
+
+<script setup>
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+</script>
 
 <style scoped>
 .info-bar {

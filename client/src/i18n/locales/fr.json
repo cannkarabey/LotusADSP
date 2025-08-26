@@ -2,9 +2,159 @@
   "nav": {
     "home": "Accueil",
     "about": "À propos",
-    "treatments": "Traitements",
-    "doctors": "Médecins",
+    "treatments": "Nos traitements",
+    "doctors": "Nos docteurs",
     "contact": "Contact"
+  },
+
+  "hero": {
+    "slide1": {
+      "title": "Traitement implantaire",
+      "text": "Grâce aux implants dentaires, vous pouvez avoir un sourire complet, sain et parfait."
+    },
+    "slide2": {
+      "title": "Implantation immédiate",
+      "text": "Si votre état osseux est approprié, vous pouvez obtenir vos implants le même jour."
+    }
+  },
+
+  "about": {
+    "title": "À propos",
+    "lead1": "La clinique dentaire Lotus est située dans le quartier Eryaman d’Etimesgut à Ankara. Elle vise à fournir des services de santé bucco-dentaire grâce à des appareils de tomographie informatisés.",
+    "lead2": "La clinique dentaire Lotus, composée de dentistes professionnels, travaille de manière multidisciplinaire afin d’assurer un diagnostic et un traitement réussis des patients.",
+    "branches": {
+      "eryaman": {
+        "title": "Eryaman / ANKARA",
+        "address": "Quartier Şehit Osman Avcı, 1071ème Rue 43/B",
+        "phone1": "0312 577 70 70",
+        "phone2": "0312 577 70 03",
+        "mobile": "0552 881 2071",
+        "addressLine": "Şehit Osman Avcı Mah. Malazgirt 1071 Cd. No:43/B Etimesgut/ANKARA"
+      },
+      "etlik": {
+        "title": "Etlik / ANKARA",
+        "address": "Quartier Ayvalı, Rue Gazze No: 15/A-B",
+        "phone1": "0312 514 70 09",
+        "phone2": "0312 514 70 99"
+      },
+      "burhaniye": {
+        "title": "Burhaniye / BALIKESİR",
+        "address": "Quartier Mahkeme, Boulevard Saip Hoca No: 10/C",
+        "phone1": "0266 412 12 44"
+      }
+    }
+  },
+
+  "features": {
+    "items": {
+      "team": {
+        "title": "Équipe de dentistes expérimentés",
+        "text": "Une équipe accueillante et axée sur la satisfaction des patients"
+      },
+      "checkup": {
+        "title": "Examen détaillé",
+        "text": "Le plan de traitement le plus précis pour la santé bucco-dentaire"
+      },
+      "tech": {
+        "title": "Approches technologiques modernes",
+        "text": "Systèmes d’imagerie numérique avancés"
+      }
+    }
+  },
+
+  "technology": {
+    "title": "Traitements modernes assistés par la technologie",
+    "top": "Les systèmes technologiques modernes offrent à la fois gain de temps et confort lors du traitement. Comme dans tous les domaines de notre vie, les innovations en dentisterie vous permettent de bénéficier de confort et de commodité dans vos soins.",
+    "bottom": "Grâce à l’imagerie 3D (tomographie), aux mesures numériques et aux systèmes d’impression numérique, nous vous proposons des conceptions de prothèses dentaires rapides et bien plus encore, avec nos médecins expérimentés."
+  },
+
+  "treatments": {
+    "title": "Nos traitements",
+    "lead": "Dans notre clinique : chirurgie, prothèses, orthodontie, parodontologie, endodontie et traitements restauratifs sont proposés avec la plus haute qualité et sécurité grâce à notre équipe expérimentée.",
+    "more": "En savoir plus...",
+    "cards": {
+      "emax": { "title": "Couronne E-Max", "slug": "emax-kaplama" },
+      "zirconium": { "title": "Couronne en Zircone", "slug": "zirkonyum-kaplama" },
+      "laminate": { "title": "Facette en céramique (Laminate)", "slug": "laminate-yaprak-dis" },
+      "implant": { "title": "Traitement implantaire", "slug": "implant-tedavisi" },
+      "immediate": { "title": "Implant immédiat", "slug": "immediat-anlik-implant" },
+      "bleaching": { "title": "Blanchiment dentaire", "slug": "beyazlatma-bleaching" },
+      "inleyOnley": { "title": "Inlay / Onlay", "slug": "inley-onley" },
+      "endodontics": { "title": "Traitement endodontique", "slug": "kanal-tedavisi" },
+      "orthodontics": { "title": "Orthodontie", "slug": "ortodontik-tedaviler" },
+      "pedodontics": { "title": "Dentisterie pédiatrique", "slug": "cocuk-dis-hekimligi" }
+    }
+  },
+
+  "doctors": {
+    "title": "Nos docteurs",
+    "list": {
+      "buse": { "name": "Dt. Buse Nur TOPLU" },
+      "zeynep": { "name": "Dt. Zeyneb Nefise MERTOĞLU" },
+      "emel": { "name": "Dr. Emel Gülin YEŞİLBAĞ" },
+      "omer": { "name": "Dt. Ömer Faruk KARABEY" },
+      "menekse": { "name": "Dt. Menekşe Nur KURNAZ" }
+    }
+  },
+
+  "clinic": { "title": "Notre clinique" },
+
+  "map": { "title": "Notre emplacement", "open": "Ouvrir dans Google Maps" },
+
+  "info": {
+    "title": "Clinique dentaire LOTUS",
+    "slogan": "SOURIEZ À LA VIE EN BONNE SANTÉ…",
+    "weekdays": "Lundi - Samedi 10h00 - 22h00",
+    "sunday": "Dimanche 11h00 - 19h00",
+    "addressTitle": "Adresse",
+    "address": "Şehit Osman Avcı Mah. Malazgirt 1071 Cd. No:43/B Etimesgut/ANKARA",
+    "phoneTitle": "Téléphone",
+    "phone1": "0312 577 70 70",
+    "phone2": "0312 577 70 03"
+  },
+
+  "footer": { "text": "© 2025 Lotus Clinic. Tous droits réservés." },
+
+  "treatmentPages": {
+    "emax": {
+      "subtitle": "Couronne E-Max",
+      "desc": "C’est une porcelaine obtenue en cuisant une vitrocéramique sur un noyau céramique cristallin comprimé sous pression sans utiliser de structure métallique, augmentant ainsi sa durabilité. Grâce à sa très grande translucidité et à l’absence de métal, c’est l’un des matériaux les plus esthétiques utilisés dans les prothèses dentaires. Elle est également fréquemment choisie dans les applications de laminés."
+    },
+    "zirconium": {
+      "subtitle": "Couronne en Zircone",
+      "desc": "Le zirconium est un matériau utilisé comme infrastructure dans les applications de bridges et de prothèses en porcelaine classique. Ce matériau est connu comme une infrastructure de couleur blanche appliquée à la place du métal gris. Les couronnes dentaires en zirconium sont devenues l’une des applications les plus fréquemment choisies en dentisterie ces dernières années. L’une des principales raisons de cette préférence est l’efficacité esthétique remarquable qu’elles procurent. Les couronnes en zirconium sont appliquées sur les dents présentant une décoloration avancée pour lesquelles les traitements de blanchiment dentaire ne donnent pas de résultats fonctionnels."
+    },
+    "laminate": {
+      "subtitle": "Facette en céramique (Laminate)",
+      "desc": "La facette en céramique, également connue sous le nom de « laminé dentaire » ou « facette feuille » dans le langage courant, est une procédure fréquemment choisie en dentisterie esthétique. Dans cette méthode, de très fines couches de porcelaine sont collées uniquement sur la face avant des dents antérieures. Comme l’usure des dents est minimale, le tissu dentaire naturel est préservé. Elle offre une solution esthétique et rapide, notamment pour corriger les colorations, les légers encombrements, les espaces et les irrégularités de forme des dents."
+    },
+    "implant": {
+      "subtitle": "Traitement implantaire",
+      "desc": "Le traitement implantaire est une application de dents artificielles réalisée sur des vis en titane insérées dans l’os de la mâchoire pour remplacer les dents manquantes. Les implants, qui assurent l’apparence et la fonction des dents naturelles, comptent parmi les méthodes de traitement les plus fiables et les plus durables aujourd’hui. Comme ils sont fabriqués en titane, compatible biologiquement avec l’os de la mâchoire, ils sont acceptés par le corps. Grâce aux implants, il est possible de restaurer les dents perdues tant sur le plan fonctionnel qu’esthétique."
+    },
+    "immediate": {
+      "subtitle": "Implant immédiat",
+      "desc": "Le traitement implantaire immédiat consiste à placer l’implant dans l’alvéole de la dent extraite au cours de la même séance. Grâce à cette méthode, les patients peuvent commencer le traitement implantaire immédiatement après l’extraction dentaire et obtenir des dents fonctionnelles et esthétiques en un temps plus court. Il est privilégié chez les patients dont la structure osseuse et la santé gingivale sont adéquates. Par rapport à la méthode traditionnelle, il réduit considérablement la durée du traitement et permet d’obtenir, dès le même jour, des résultats esthétiques satisfaisants avec des prothèses provisoires."
+    },
+    "bleaching": {
+      "subtitle": "Blanchiment dentaire",
+      "desc": "Le blanchiment dentaire est une méthode de traitement esthétique appliquée pour éliminer les colorations et le jaunissement qui apparaissent sur les dents avec le temps. En plus des habitudes quotidiennes telles que le thé, le café et le tabac, le vieillissement provoque également des changements de couleur des dents. La méthode de blanchiment (bleaching) permet de supprimer ces colorations et d’offrir aux dents un aspect plus blanc et esthétique. Il existe des traitements de blanchiment en cabinet, réalisés par le dentiste, ainsi que des méthodes de blanchiment à domicile avec des gouttières personnalisées. La durée de l’application est courte et les résultats sont rapides et fiables."
+    },
+    "inleyonley": {
+      "subtitle": "Inlay / Onlay",
+      "desc": "Les inlays et onlays sont des restaurations spéciales utilisées lorsque la carie ou la perte de substance dentaire ne peut pas être entièrement traitée par un plombage classique mais ne nécessite pas de couronne. Ils sont fabriqués en laboratoire à partir de porcelaine ou de matériau composite, puis collés à la dent. Les inlays recouvrent une petite partie de la dent, tandis que les onlays couvrent des zones plus larges. Cette méthode permet d’obtenir une restauration à la fois esthétique et durable. En préservant au maximum la structure dentaire naturelle, cette application constitue une solution fiable et de longue durée."
+    },
+    "endodontics": {
+      "subtitle": "Traitement endodontique",
+      "desc": "Le traitement de canal est une méthode appliquée lorsque le tissu nerveux et sanguin (pulpe) à l’intérieur de la dent est enflammé ou endommagé. Dans ce processus, le tissu pulpaire infecté ou endommagé est retiré, l’intérieur de la dent est nettoyé puis scellé avec des matériaux d’obturation spéciaux. Grâce au traitement de canal, une dent qui aurait dû être extraite peut être conservée en bouche et continuer à fonctionner de manière saine pendant de nombreuses années. Réalisé avec des dispositifs et techniques modernes, le traitement de canal peut être effectué rapidement et sans douleur."
+    },
+    "orthodontics": {
+      "subtitle": "Orthodontie",
+      "desc": "L’orthodontie est une branche de la dentisterie qui s’occupe du diagnostic et du traitement des anomalies dentaires et maxillaires. Des dents mal alignées, espacées ou en mauvaise position entraînent non seulement des préoccupations esthétiques, mais affectent également la mastication, la parole et la santé bucco-dentaire. Aujourd’hui, de nombreuses méthodes de traitement sont utilisées, telles que les bagues métalliques, les aligneurs transparents (Invisalign) et les bagues esthétiques. Grâce à l’orthodontie, il est possible d’obtenir à la fois un sourire esthétique et une structure dento-maxillaire fonctionnelle."
+    },
+    "pedodontics": {
+      "subtitle": "Dentisterie pédiatrique",
+      "desc": "La pédodontie est la branche de la dentisterie qui vise à protéger et à traiter la santé des dents temporaires et permanentes des enfants. Elle joue un rôle essentiel dans le développement régulier des dents, la prévention des caries et l’acquisition des habitudes d’hygiène bucco-dentaire. Grâce aux applications de fluor, aux scellants de sillons et aux méthodes d’obturation préventives, les dents des enfants sont protégées contre les caries. De plus, les traumatismes dentaires et les pertes dentaires précoces chez l’enfant relèvent également de la pédodontie. Grâce à la pédodontie, les enfants acquièrent une dentition à la fois saine et esthétique."
+    }
   }
 }
-

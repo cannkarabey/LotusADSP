@@ -2,28 +2,33 @@
   <section class="treatment-page">
     <!-- Başlık kısmı -->
     <div class="hero">
-      <img :src="headerImg" alt="Pedodonti Başlık" class="hero-img" />
+      <img
+        :src="headerImg"
+        :alt="t('treatments.cards.pedodontics.title')"
+        class="hero-img"
+      />
     </div>
 
     <!-- İçerik -->
     <div class="container content">
-      <img :src="image" alt="Pedodonti" class="treatment-img" />
+      <img
+        :src="image"
+        :alt="t('treatments.cards.pedodontics.title')"
+        class="treatment-img"
+      />
 
-      <h2 class="subtitle">Pedodonti (Çocuk Diş Hekimliği)</h2>
-      <p>
-        Pedodonti, çocukların süt ve daimi dişlerinin sağlığını korumayı ve tedavi etmeyi amaçlayan diş hekimliği dalıdır.  
-        Çocuklarda dişlerin düzenli gelişimi, çürüklerin önlenmesi ve ağız hijyeni alışkanlıklarının kazandırılması için pedodonti büyük önem taşır.  
-        Flor uygulamaları, fissür örtücü tedaviler ve koruyucu dolgu yöntemleriyle çocukların dişleri çürüklerden korunur.  
-        Ayrıca çocuklarda travmaya bağlı diş yaralanmaları ve erken diş kayıpları da pedodontinin ilgi alanına girer.  
-        Pedodonti sayesinde çocuklar hem sağlıklı hem de estetik bir diş yapısına sahip olur.
-      </p>
+      <h2 class="subtitle">{{ t('treatmentPages.pedodontics.subtitle') }}</h2>
+      <p>{{ t('treatmentPages.pedodontics.desc') }}</p>
     </div>
   </section>
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
 import headerImg from '../../assets/pedodontics/başlık.png'
 import image from '../../assets/pedodontics/image.png'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>

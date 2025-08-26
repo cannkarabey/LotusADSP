@@ -5,24 +5,24 @@
         <div class="feature">
           <img class="icon" :src="icDoctor" alt="" />
           <div class="text">
-            <h3>Tecrübeli Hekim Kadrosu</h3>
-            <p>Hasta memnuniyeti odaklı ve güler yüzlü ekip</p>
+            <h3>{{ t('features.items.team.title') }}</h3>
+            <p>{{ t('features.items.team.text') }}</p>
           </div>
         </div>
 
         <div class="feature">
           <img class="icon" :src="icChecklist" alt="" />
           <div class="text">
-            <h3>Detaylı Muayene</h3>
-            <p>Ağız ve diş sağlığı için en doğru tedavi planlaması</p>
+            <h3>{{ t('features.items.checkup.title') }}</h3>
+            <p>{{ t('features.items.checkup.text') }}</p>
           </div>
         </div>
 
         <div class="feature">
           <img class="icon" :src="icMonitor" alt="" />
           <div class="text">
-            <h3>Güncel Teknolojik Yaklaşımlar</h3>
-            <p>İleri teknoloji dijital görüntüleme sistemleri</p>
+            <h3>{{ t('features.items.tech.title') }}</h3>
+            <p>{{ t('features.items.tech.text') }}</p>
           </div>
         </div>
       </div>
@@ -35,10 +35,13 @@
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
 import sideImage   from '../../assets/infosection/xray.jpg'
 import icDoctor    from '../../assets/infosection/doctor.png'
 import icChecklist from '../../assets/infosection/checklist.png'
 import icMonitor   from '../../assets/infosection/monitor.png'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>
@@ -46,16 +49,12 @@ import icMonitor   from '../../assets/infosection/monitor.png'
 .info { padding: 80px 0; }
 .light { background: #f6fbfe; }
 
-/* >>> AboutSection ile aynı container genişliği ve ortalama <<< */
 .container {
-  max-width: 1000px;   /* About ile birebir */
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* İki kolon: solda içerik, sağda görsel
-   Sağ kolon sabit (~520px), sol kolon kalan alanı alır.
-   Böylece sol metinlerin SOL KENARI, üstteki About metinlerinin sol kenarıyla aynı hizaya gelir. */
 .grid {
   display: grid;
   grid-template-columns: 1fr 520px;
@@ -63,7 +62,6 @@ import icMonitor   from '../../assets/infosection/monitor.png'
   align-items: center;
 }
 
-/* Sol sütun (metinler) */
 .features { display: grid; gap: 28px; }
 .feature {
   display: grid;
@@ -75,7 +73,6 @@ import icMonitor   from '../../assets/infosection/monitor.png'
 .text h3 { margin: 0 0 6px; font-size: 22px; font-weight: 700; color: #1f2937; }
 .text p  { margin: 0; color: #4b5563; font-size: 16px; }
 
-/* Sağ sütun (görsel) */
 .imageWrap { width: 100%; }
 .imageWrap img {
   display: block;
@@ -85,7 +82,6 @@ import icMonitor   from '../../assets/infosection/monitor.png'
   box-shadow: 0 8px 24px rgba(0,0,0,.08);
 }
 
-/* Responsive */
 @media (max-width: 1100px) {
   .grid { grid-template-columns: 1fr 480px; gap: 40px; }
 }

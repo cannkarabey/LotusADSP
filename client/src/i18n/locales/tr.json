@@ -5,5 +5,194 @@
     "treatments": "Tedavilerimiz",
     "doctors": "Doktorlarımız",
     "contact": "İletişim"
+  },
+
+  "hero": {
+    "slide1": {
+      "title": "İmplant Tedavisi",
+      "text": "Dental implantlar sayesinde eksiksiz, sağlıklı ve mükemmel gülüşlere sahip olabilirsiniz."
+    },
+    "slide2": {
+      "title": "Anlık (Immediate) İmplant Tedavisi",
+      "text": "Kemik durumunuz uygunsa, aynı gün içerisinde implant dişlerinize kavuşabilirsiniz."
+    }
+  },
+
+  "about": {
+    "title": "Hakkımızda",
+    "lead1": "Lotus ağız ve diş sağlığı polikliniği Ankara’nın Etimesgut ilçesinin Eryaman Mahallesinde hizmet vermektedir. Bilgisayarlı tomografi cihazları ile ağız ve diş sağlığı alanında hizmet vermeyi amaçlıyor.",
+    "lead2": "Lotus ağız ve diş sağlığı polikliniği profesyonel diş hekimlerinden oluşan, ekip tarafından multidisipliner bir şekilde çalışarak hastanın tanı ve tedavisinin başarılı bir şekilde gerçekleştirilmesini hedeflemektedir.",
+    "branches": {
+      "eryaman": {
+        "title": "Eryaman / ANKARA",
+        "address": "Şehit Osman Avcı Mahallesi 1071.cadde 43/B",
+        "phone1": "0312 577 70 70",
+        "phone2": "0312 577 70 03",
+        "mobile": "0552 881 2071"
+        ,
+        "addressLine": "Şehit Osman Avcı Mah. Malazgirt 1071 Cad. No:43/B Etimesgut/ANKARA"
+      },
+      "etlik": {
+        "title": "Etlik / ANKARA",
+        "address": "Ayvalı Mahallesi Gazze Caddesi No : 15/A-B",
+        "phone1": "0312 514 70 09",
+        "phone2": "0312 514 70 99"
+      },
+      "burhaniye": {
+        "title": "Burhaniye / BALIKESİR",
+        "address": "Mahkeme Mahallesi Saip Hoca Bulvarı No : 10/C",
+        "phone1": "0266 412 12 44"
+      }
+    }
+  },
+
+  "features": {
+    "items": {
+      "team": {
+        "title": "Tecrübeli Hekim Kadrosu",
+        "text": "Hasta memnuniyeti odaklı ve güler yüzlü ekip"
+      },
+      "checkup": {
+        "title": "Detaylı Muayene",
+        "text": "Ağız ve diş sağlığı için en doğru tedavi planlaması"
+      },
+      "tech": {
+        "title": "Güncel Teknolojik Yaklaşımlar",
+        "text": "İleri teknoloji dijital görüntüleme sistemleri"
+      }
+    }
+  },
+
+  "technology": {
+    "title": "Teknoloji Destekli Güncel Tedaviler",
+    "top": "Güncel teknolojik sistemler, tedavide hem zaman tasarrufu, hem de konfor sağlamaktadır. Hayatımızın her alanında olduğu gibi diş hekimliğinde de büyük yenilikler sağlayan teknolojik gelişmeler sayesinde tedavilerinizde konforu ve rahatlığı yaşayın.",
+    "bottom": "3 boyutlu görüntüleme (Tomografi), dijital ölçü ve dijital yazıcı sistemleri ile tedavinizi hızla tamamlamanızı sağlayan diş protez tasarımları ve daha fazlasını tecrübeli doktorlarımızla hizmetinize sunmaktayız."
+  },
+
+  "treatments": {
+    "title": "Tedavilerimiz",
+    "lead": "Kliniğimizde; Cerrahi, Protez, Ortodonti, Periodontoloji, Endodonti ve Restoratif tüm tedavileri; tecrübeli hekim kadromuz sayesinde sizlere en iyi kalite ve sağlıklı bir şekilde sunmaktayız.",
+    "more": "Daha Fazla Bilgi...",
+    "cards": {
+      "emax": {
+        "title": "E-Max Kaplama",
+        "slug": "emax-kaplama"
+      },
+      "zirconium": {
+        "title": "Zirkonyum Kaplama",
+        "slug": "zirkonyum-kaplama"
+      },
+      "laminate": {
+        "title": "Laminate (Yaprak Diş)",
+        "slug": "laminate-yaprak-dis"
+      },
+      "implant": {
+        "title": "İmplant Tedavisi",
+        "slug": "implant-tedavisi"
+      },
+      "immediate": {
+        "title": "Immediat (Anlık) İmplant",
+        "slug": "immediat-anlik-implant"
+      },
+      "bleaching": {
+        "title": "Beyazlatma (Bleaching)",
+        "slug": "beyazlatma-bleaching"
+      },
+      "inleyOnley": {
+        "title": "İnley / Onley",
+        "slug": "inley-onley"
+      },
+      "endodontics": {
+        "title": "Kanal Tedavisi",
+        "slug": "kanal-tedavisi"
+      },
+      "orthodontics": {
+        "title": "Ortodontik Tedaviler",
+        "slug": "ortodontik-tedaviler"
+      },
+      "pedodontics": {
+        "title": "Çocuk Diş Hekimliği",
+        "slug": "cocuk-dis-hekimligi"
+      }
+    }
+  },
+
+  "doctors": {
+    "title": "Doktorlarımız",
+    "list": {
+      "buse": { "name": "Dt. Buse Nur TOPLU" },
+      "zeynep": { "name": "Dt. Zeyneb Nefise MERTOĞLU" },
+      "emel": { "name": "Dr. Emel Gülin YEŞİLBAĞ" },
+      "omer": { "name": "Dt. Ömer Faruk KARABEY" },
+      "menekse": { "name": "Dt. Menekşe Nur KURNAZ" }
+    }
+  },
+
+  "clinic": {
+    "title": "Kliniğimiz"
+  },
+
+  "map": {
+    "title": "Konumumuz",
+    "open": "Google Maps’te Aç"
+  },
+
+  "info": {
+    "title": "LOTUS Ağız ve Diş Sağlığı Polikliniği",
+    "slogan": "HAYATA SAĞLIKLA GÜLÜMSEYİN…",
+    "weekdays": "Pazartesi - Cumartesi 10:00 - 22:00",
+    "sunday": "Pazar 11:00 - 19:00",
+    "addressTitle": "Adres",
+    "address": "Şehit Osman Avcı Mah. Malazgirt 1071 Cad. No:43/B Etimesgut/ANKARA",
+    "phoneTitle": "Telefon",
+    "phone1": "0312 577 70 70",
+    "phone2": "0312 577 70 03"
+  },
+
+  "footer": {
+    "text": "© 2025 Lotus Kliniği. Tüm hakları saklıdır."
+  },
+
+  "treatmentPages": {
+    "emax": {
+      "subtitle": "E-Max Kaplama",
+      "desc": "Herhangi bir metal altyapı kullanmadan basınç altında sıkışması sağlanan kristal yapılı seramik çekirdek üzerine cam seramiğin pişirilmesi ile elde edilen ve bu şekilde dayanıklılığı arttırılmış porselendir. Işık geçirgenliğinin çok yüksek olmasından ve metal içeriğinin bulunmamasından kaynaklı diş protezlerinde tercih edilen en estetik malzemelerdendir. Lamine uygulamalarında da sık sık tercih edilir."
+    },
+    "zirconium": {
+      "subtitle": "Zirkonyum Kaplama",
+      "desc": "Zirkonyum klasik porselenin köprü ve protez uygulamalarında alt yapı olarak kullanılan bir maddedir. Bu madde gri metal yerine uygulanan beyaz renkli bir altyapı olarak bilinmektedir. Zirkonyum diş kaplama diş hekimliği alanında son senelerin en sık tercih edilen bir uygulamasıdır. Diş kaplama uygulamalarında zirkonyum tercih edilmesinin en önemli nedenlerinden biri estetik açıdan çok etkili sonuçlar doğurmasıdır. Diş beyazlatma uygulamalarıyla işlevsel sonuç alınamayan ileri düzeyde renk değişim olan dişler için zirkonyum diş kaplama uygulanmaktadır."
+    },
+    "laminate": {
+      "subtitle": "Laminate (Yaprak Diş)",
+      "desc": "Laminate veneer ya da halk arasında bilinen adıyla yaprak diş kaplama, estetik diş hekimliğinde sıklıkla tercih edilen bir uygulamadır. Bu yöntemde ön dişlerin sadece ön yüzeyine çok ince porselen tabakalar yapıştırılır. Dişlerde minimum aşındırma yapıldığı için doğal diş dokusu korunur. Özellikle dişlerdeki renklenmelerin, küçük çapraşıklıkların, aralıkların ve şekil bozukluklarının giderilmesinde estetik ve hızlı bir çözüm sunar."
+    },
+    "implant": {
+      "subtitle": "İmplant Tedavisi",
+      "desc": "İmplant tedavisi, eksik dişlerin yerine çene kemiğine yerleştirilen titanyum vidalar üzerine yapılan yapay diş uygulamasıdır. Doğal diş görünümü ve fonksiyonunu sağlayan implantlar, günümüzde en güvenilir ve uzun ömürlü tedavi yöntemlerinden biridir. Çene kemiği ile biyolojik uyum sağlayan titanyumdan üretildikleri için vücut tarafından kabul edilirler. İmplantlar sayesinde kaybedilen dişlerin fonksiyonel ve estetik olarak geri kazanılması sağlanır."
+    },
+    "immediate": {
+      "subtitle": "Immediat (Anlık) İmplant",
+      "desc": "Immediate implant tedavisi, çekilen dişin boşluğuna aynı seansta implantın yerleştirilmesi işlemidir. Bu yöntem sayesinde hastalar diş çekiminden hemen sonra implant tedavisine başlamış olur ve daha kısa sürede fonksiyonel ve estetik dişlere kavuşurlar. Kemik yapısı ve diş eti sağlığı uygun olan hastalarda tercih edilir. Geleneksel yönteme göre tedavi süresini ciddi ölçüde kısaltır ve aynı gün geçici protezlerle estetik açıdan tatmin edici sonuçlar elde edilebilir."
+    },
+    "bleaching": {
+      "subtitle": "Beyazlatma (Bleaching)",
+      "desc": "Diş beyazlatma, dişlerde zamanla oluşan renklenmeleri ve sararmaları gidermek için uygulanan estetik bir tedavi yöntemidir. Günlük tüketilen çay, kahve, sigara gibi alışkanlıkların yanı sıra yaşlanma ile dişlerde renk değişimleri meydana gelir. Bleaching yöntemi, bu renklenmeleri gidererek dişlerin daha beyaz ve estetik bir görünüme kavuşmasını sağlar. Klinik ortamında hekim tarafından uygulanan ofis tipi beyazlatma veya kişiye özel plaklarla yapılan ev tipi beyazlatma yöntemleri mevcuttur. Uygulama süresi kısa, sonuçları hızlı ve güvenilir bir işlemdir."
+    },
+    "inleyonley": {
+      "subtitle": "İnley / Onley",
+      "desc": "İnley ve onley dolgular, dişlerdeki çürük veya madde kaybının klasik dolgu ile tam tedavi edilemediği ancak kaplama gerektirmediği durumlarda kullanılan özel restorasyonlardır. Laboratuvar ortamında porselen veya kompozit materyalden hazırlanarak dişe yapıştırılır. İnley dolgular dişin küçük bir kısmını kaplarken, onley dolgular daha geniş alanları örter. Bu yöntem sayesinde hem estetik hem de dayanıklı bir restorasyon elde edilir. Doğal diş dokusunu maksimum seviyede koruyan bu uygulama, uzun ömürlü ve güvenilir bir çözümdür."
+    },
+    "endodontics": {
+      "subtitle": "Kanal Tedavisi",
+      "desc": "Kanal tedavisi, dişin içinde bulunan sinir ve damar dokusunun (pulpa) iltihaplanması veya hasar görmesi durumunda uygulanan bir tedavi yöntemidir. Bu işlemde, iltihaplı veya hasarlı pulpa dokusu çıkarılır, dişin içi temizlenir ve özel dolgu maddeleri ile kapatılır. Kanal tedavisi sayesinde, çekilmesi gereken bir diş ağızda korunmuş olur ve yıllarca sağlıklı bir şekilde işlevini sürdürebilir. Modern cihazlar ve yöntemlerle yapılan kanal tedavisi, hem hızlı hem de ağrısız bir şekilde tamamlanabilmektedir."
+    },
+    "orthodontics": {
+      "subtitle": "Ortodontik Tedaviler",
+      "desc": "Ortodonti, diş ve çene bozukluklarının teşhis ve tedavisiyle ilgilenen diş hekimliği dalıdır. Dişlerin çapraşık, aralıklı veya yanlış pozisyonda olması estetik kaygıların yanı sıra çiğneme, konuşma ve ağız sağlığını da olumsuz etkiler. Günümüzde metal braketler, şeffaf plaklar (Invisalign) ve estetik braketler gibi birçok farklı tedavi yöntemi uygulanmaktadır. Ortodonti sayesinde hem estetik bir gülüş hem de fonksiyonel bir çene-diş yapısı elde edilir."
+    },
+    "pedodontics": {
+      "subtitle": "Çocuk Diş Hekimliği",
+      "desc": "Pedodonti, çocukların süt ve daimi dişlerinin sağlığını korumayı ve tedavi etmeyi amaçlayan diş hekimliği dalıdır. Çocuklarda dişlerin düzenli gelişimi, çürüklerin önlenmesi ve ağız hijyeni alışkanlıklarının kazandırılması için pedodonti büyük önem taşır. Flor uygulamaları, fissür örtücü tedaviler ve koruyucu dolgu yöntemleriyle çocukların dişleri çürüklerden korunur. Ayrıca çocuklarda travmaya bağlı diş yaralanmaları ve erken diş kayıpları da pedodontinin ilgi alanına girer. Pedodonti sayesinde çocuklar hem sağlıklı hem de estetik bir diş yapısına sahip olur."
+    }
   }
 }

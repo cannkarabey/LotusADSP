@@ -2,29 +2,33 @@
   <section class="treatment-page">
     <!-- Başlık kısmı -->
     <div class="hero">
-      <img :src="headerImg" alt="Laminate Başlık" class="hero-img" />
+      <img
+        :src="headerImg"
+        :alt="t('treatments.cards.laminate.title')"
+        class="hero-img"
+      />
     </div>
 
     <!-- İçerik -->
     <div class="container content">
-      <img :src="image" alt="Laminate Yaprak Diş" class="treatment-img" />
+      <img
+        :src="image"
+        :alt="t('treatments.cards.laminate.title')"
+        class="treatment-img"
+      />
 
-      <h2 class="subtitle">Laminate (Yaprak Diş)</h2>
-      <p>
-        Laminate veneer ya da halk arasında bilinen adıyla yaprak diş kaplama, 
-        estetik diş hekimliğinde sıklıkla tercih edilen bir uygulamadır. 
-        Bu yöntemde ön dişlerin sadece ön yüzeyine çok ince porselen tabakalar 
-        yapıştırılır. Dişlerde minimum aşındırma yapıldığı için doğal diş dokusu 
-        korunur. Özellikle dişlerdeki renklenmelerin, küçük çapraşıklıkların, 
-        aralıkların ve şekil bozukluklarının giderilmesinde estetik ve hızlı bir çözüm sunar.
-      </p>
+      <h2 class="subtitle">{{ t('treatmentPages.laminate.subtitle') }}</h2>
+      <p>{{ t('treatmentPages.laminate.desc') }}</p>
     </div>
   </section>
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
 import headerImg from '../../assets/laminate/başlık.png'
 import image from '../../assets/laminate/image.png'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>

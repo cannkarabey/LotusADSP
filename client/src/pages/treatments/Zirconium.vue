@@ -2,29 +2,33 @@
   <section class="treatment-page">
     <!-- Başlık kısmı -->
     <div class="hero">
-      <img :src="headerImg" alt="Zirkonyum Kaplama Başlık" class="hero-img" />
+      <img
+        :src="headerImg"
+        :alt="t('treatments.cards.zirconium.title')"
+        class="hero-img"
+      />
     </div>
 
     <!-- İçerik -->
     <div class="container content">
-      <img :src="image" alt="Zirkonyum Kaplama" class="treatment-img" />
+      <img
+        :src="image"
+        :alt="t('treatments.cards.zirconium.title')"
+        class="treatment-img"
+      />
 
-      <h2 class="subtitle">Zirkonyum Kaplama</h2>
-      <p>
-        Zirkonyum klasik porselenin köprü ve protez uygulamalarında alt yapı olarak kullanılan 
-        bir maddedir. Bu madde gri metal yerine uygulanan beyaz renkli bir altyapı olarak bilinmektedir. 
-        Zirkonyum diş kaplama diş hekimliği alanında son senelerin en sık tercih edilen bir uygulamasıdır. 
-        Diş kaplama uygulamalarında zirkonyum tercih edilmesinin en önemli nedenlerinden biri estetik açıdan 
-        çok etkili sonuçlar doğurmasıdır. Diş beyazlatma uygulamalarıyla işlevsel sonuç alınamayan ileri düzeyde 
-        renk değişim olan dişler için zirkonyum diş kaplama uygulanmaktadır.
-      </p>
+      <h2 class="subtitle">{{ t('treatmentPages.zirconium.subtitle') }}</h2>
+      <p>{{ t('treatmentPages.zirconium.desc') }}</p>
     </div>
   </section>
 </template>
 
 <script setup>
-import headerImg from '../../assets/zinconium/başlık.png'
-import image from '../../assets/zinconium/image.png'
+import { useI18n } from 'vue-i18n'
+import headerImg from '../../assets/zirconium/başlık.png'
+import image from '../../assets/zirconium/image.png'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>
